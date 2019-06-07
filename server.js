@@ -9,6 +9,8 @@ server.get("/", (req, res) => {
 });
 
 // Define Routes
+server.use("/api/projects", require("./routes/projects-route"));
+server.use("/api/actions", require("./routes/actions-route"));
 
 // Logger
 function logger(req, res, next) {

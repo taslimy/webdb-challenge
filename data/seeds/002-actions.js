@@ -8,17 +8,20 @@ exports.seed = function(knex, Promise) {
         {
           project_id: 1,
           description: "This is a test description 1",
-          notes: "This is a test note 1"
+          notes: "This is a test note 1",
+          completed: true,
         },
         {
           project_id: 2,
           description: "This is a test description 2",
-          notes: "This is a test note 2"
+          notes: "This is a test note 2",
+          completed: false
         },
         {
           project_id: 3,
           description: "This is a test description 3",
-          notes: "This is a test note 3"
+          notes: "This is a test note 3",
+          completed: false
         }
       ]);
     });
